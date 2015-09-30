@@ -1,0 +1,16 @@
+{
+  "name": "speaker-space-react",
+  "version": "1.0.0",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build": "browserify -t babelify src/index.js --outfile build/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
