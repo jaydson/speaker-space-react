@@ -1,3 +1,9 @@
+.speaker-space-background {
+	background: #403C3C;
+}
+.speaker-space-background .title {
+	color: #fff;
+}
 .cardlist {
 	margin: 10px;
 }
@@ -72,4 +78,10 @@
 
 .mdl-card__actions a {
 	margin-left: 4px;
+}
+
+.expand {
+	float: right;
+	position: relative;
+	cursor: pointer;
 }
