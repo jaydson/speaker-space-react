@@ -7,6 +7,7 @@ const CardList = React.createClass({
 			<div>
 				{talks.map((talk) => {
 					return <CardTalk name= { talk.name } 
+									 description = { talk.description } 
 									 conf= { talk.conf }
 									 date= { talk.date }
 									 image= { talk.image }

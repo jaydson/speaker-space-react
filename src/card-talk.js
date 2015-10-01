@@ -33,8 +33,7 @@ const CardTalk = React.createClass({
 					</div>
 				</div>
 				<div className="mdl-card__supporting-text">
-				    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				    Aenan convallis.
+					{ this.props.description }
 				</div>
 				<div className="mdl-card__actions mdl-card--border">
 					{ slides }
