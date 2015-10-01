@@ -6,7 +6,8 @@
   "directories": {
     "example": "examples"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {},
   "scripts": {
     "build": "browserify -t babelify src/index.js --outfile build/index.js"

@@ -50,7 +50,7 @@ var SlideLink = React.createClass({
 	render: function render() {
 		return React.createElement(
 			"a",
-			{ target: "_blank", href: "" + this.props.link },
+			{ target: "_blank", href: "" + this.props.link, alt: "Slides" },
 			React.createElement("img", { src: "/img/slides-icon.png", alt: "Slides" })
 		);
 	}
@@ -62,7 +62,7 @@ var VideoLink = React.createClass({
 	render: function render() {
 		return React.createElement(
 			"a",
-			{ target: "_blank", href: "" + this.props.link },
+			{ id: "speaker-video", target: "_blank", href: "" + this.props.link, alt: "Video" },
 			React.createElement("img", { src: "/img/video-icon.png", alt: "Video" })
 		);
 	}
@@ -78,28 +78,28 @@ var CardTalk = React.createClass({
 
 		return React.createElement(
 			"div",
-			{ className: "talk-card mdl-card mdl-shadow--2dp", style: { background: "url(" + this.props.image + ");background-size: cover" } },
+			{ className: "demo-card-square mdl-card mdl-shadow--2dp" },
 			React.createElement(
 				"div",
-				{ className: "mdl-card__title mdl-card--expand" },
-				React.createElement("h2", { className: "mdl-card__title-text" })
+				{ className: "mdl-card__title mdl-card--expand", style: { background: "url(" + this.props.image + ");background-size: cover" } },
+				React.createElement(
+					"div",
+					null,
+					React.createElement(
+						"h2",
+						{ className: "mdl-card__title-text" },
+						this.props.name
+					)
+				)
 			),
 			React.createElement(
 				"div",
 				{ className: "mdl-card__supporting-text" },
-				this.props.name,
-				" ",
-				React.createElement("br", null),
-				this.props.date,
-				", ",
-				this.props.conf,
-				React.createElement("br", null),
-				this.props.local,
-				React.createElement("br", null)
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis."
 			),
 			React.createElement(
 				"div",
-				{ className: "icon" },
+				{ className: "mdl-card__actions mdl-card--border" },
 				slides,
 				video
 			)
